@@ -72,7 +72,7 @@ void printArray(int arr[], int size) {
 
 
 int main() {
-
+  int arr[]={64,25,12,22,11};
   int size = sizeof(arr) / sizeof(arr[0]);
 
   mergeSort(arr, 0, size - 1);
