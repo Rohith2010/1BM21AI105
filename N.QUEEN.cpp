@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define N 4
+#define N 6
 using namespace std;
 
 void printSolution(int board[N][N])
@@ -56,9 +56,11 @@ bool solveNQUtil(int board[N][N], int col)
 bool solveNQ()
 {
 	int board[N][N] = { { 0, 0, 0, 0 },
-						{ 0, 0, 0, 0 },
-						{ 0, 0, 0, 0 },
-						{ 0, 0, 0, 0 } };
+			    { 0, 0, 0, 0 },
+			    { 0, 0, 0, 0 },
+			    { 0, 0, 0, 0 },
+			    { 0, 0, 0, 0 },
+		            { 0, 0, 0, 0 }};
 
 	if (solveNQUtil(board, 0) == false) {
 		cout << "Solution does not exist";
